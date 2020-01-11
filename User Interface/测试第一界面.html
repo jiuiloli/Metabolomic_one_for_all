@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html >
  <head>
-
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
      
  </head>
- <body>
-   <!-- <button id="btn1" onclick="btn1();">1</button>
-    <button id="btn2" onclick="btn2();">2</button>
-    <script>
-        var btn = document.getElementsByTagName("button");
-        for(var i in btn)
-        {
-            btn[i].addEventListener("click",function()
-            {
-                alert(this.innerHTML);
-            },true);
-        }
-    </script>  --->
-    <h1>Data import</h1>
-    <p>
+ <body  >
+    <div class=outset >
+    <h1 >Data import</h1>
+    <p lang="40">
         处理方式
-        <select name="hide" size="1">
+        <select name="hide" size="1">   <!--提供选择下拉菜单-->
             <option selected="selected" value="0">LC</option>
             <option value="1">GC</option>
         </select>
     </p>
-<form action="/testform.asp" method="GET">
-    <input type="file" name="file" multiple id="file" size="50" required="required" />
-    <input type="submit" value="提交数据" />
-</form>
-<a href="测试第二界面.html" > 
-    <button  onclick="file_open()" type="button"  >
-    运行
-     
-</button>
-</a>
-
- </body>
+    
+       <form action="/testform.asp" method="GET">      <!--提示选择文件-->
+       <input type="file" name="file" multiple id="file" size="50" required="required" />
+       
+       <input type="submit" value="提交数据" />
+       </form>
+       <div>
+        <a href="测试第二界面.html" >   <!--链接下个界面-->
+            <button   onclick="file_open()" type="button"  >
+            运行
+            </button>
+       </a>
+    </div>
+    </div>
+ </bodyclass="outset">
  </html>
